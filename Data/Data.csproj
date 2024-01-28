@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="CSVFiles\Artikel.csv" />
     <None Remove="CSVFiles\Artikel_original.csv" />
   </ItemGroup>
 
@@ -15,6 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="CSVFiles\Artikel.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="CSVFiles\Artikel_original.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

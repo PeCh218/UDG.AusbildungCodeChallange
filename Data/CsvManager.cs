@@ -7,8 +7,8 @@ namespace Data;
 
 public class CsvManager
 {
-    private const string CsvPathOriginal = @"F:\Projekte\UDG.AusbildungCodeChallange\Data\CSVFiles\Artikel_original.csv";
-    private const string CsvPath = @"F:\Projekte\UDG.AusbildungCodeChallange\Data\CSVFiles\Artikel.csv";
+    private const string CsvPathOriginal = @"CSVFiles\Artikel_original.csv";
+    private const string CsvPath = @"CSVFiles\Artikel.csv";
 
     public IEnumerable<Artikel> ReadCsvFile()
     {
