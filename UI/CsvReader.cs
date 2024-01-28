@@ -47,7 +47,11 @@ namespace UI
         }
         private void deleteArticle_Click(object sender, EventArgs e)
         {
-            //abfangen dass auch ein valider index gegeben ist
+            if (_selectedRow == -1)
+            {
+                MessageBox.Show("Keine Zeile ausgewählt", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             _artikel.RemoveAt(_selectedRow);
             RefreshGrid();
