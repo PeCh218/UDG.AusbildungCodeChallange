@@ -28,10 +28,6 @@ namespace UI
 
             toolTip1.SetToolTip(addArticle, "Add");
 
-            var table = GetArtikelDataTable();
-            chart1.DataSource = table;
-            chart1.DataMemberX = "Hauptartikelnr";
-            chart1.DataMemberY = "200";
         }
         private void RefreshGrid()
         {
