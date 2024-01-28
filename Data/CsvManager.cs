@@ -19,7 +19,7 @@ public class CsvManager
         };
 
 
-        using var reader = new StreamReader(CsvPathOriginal);
+        using var reader = new StreamReader(CsvPath);
         using var csv = new CsvReader(reader, config);
         var records = csv.GetRecords<Artikel>();
 
