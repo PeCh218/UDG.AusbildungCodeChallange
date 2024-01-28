@@ -56,7 +56,6 @@
             labelPC = new Label();
             panel1 = new Panel();
             panel2 = new Panel();
-            chart1 = new Chart();
             ((System.ComponentModel.ISupportInitialize)artikelGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)artikelBindingSource).BeginInit();
             panel1.SuspendLayout();
@@ -306,34 +305,12 @@
             panel2.Size = new Size(1310, 76);
             panel2.TabIndex = 8;
             // 
-            // chart1
-            // 
-            chart1.AlternateFillColor = Color.Red;
-            chart1.AlternateLineColor = Color.Red;
-            chart1.AlternateValueColor = Color.Red;
-            chart1.BaselineColor = Color.Black;
-            chart1.BorderlineColor = Color.Black;
-            chart1.DataMemberX = null;
-            chart1.DataMemberY = null;
-            chart1.Location = new Point(903, 58);
-            chart1.Name = "chart1";
-            chart1.PrimaryFillColor = Color.DeepSkyBlue;
-            chart1.PrimaryLineColor = Color.DeepSkyBlue;
-            chart1.PrimaryValueColor = Color.Blue;
-            chart1.Size = new Size(395, 288);
-            chart1.TabIndex = 9;
-            chart1.Xinmargin = 20;
-            chart1.Xmargin = 20;
-            chart1.Yinmargin = 20;
-            chart1.Ymargin = 20;
-            // 
             // CsvReader
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(231, 234, 240);
             ClientSize = new Size(1310, 692);
-            Controls.Add(chart1);
             Controls.Add(deleteArticle);
             Controls.Add(panel1);
             Controls.Add(addArticle);
@@ -376,6 +353,5 @@
         private Label labelPC;
         private Panel panel1;
         private Panel panel2;
-        private Chart chart1;
     }
 }
